@@ -1,2 +1,2 @@
-import './rotate-cube';
-import './open-cube';
+import './scripts/control-cube';
+import './scripts/open-cube';

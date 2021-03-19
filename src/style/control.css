@@ -1,0 +1,43 @@
+.control {
+  max-width: 200px;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.control__panel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 8px;
+  row-gap: 12px;
+  margin-top: 10px;
+}
+
+.control__button {
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+  box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 6px 0 #C0C0C0,
+    0 8px 17px rgba(68, 68, 68, 0.4), 2px 1px 4px rgba(68, 68, 68, 0.25),
+    -2px 1px 4px rgba(68, 68, 68, 0.25), 0 9px 16px rgba(68, 68, 68, 0.1);
+  background: rgb(212, 212, 212);
+  font-size: 30px;
+  transition: box-shadow 0.3s ease, transform 0.15s ease;
+  user-select: none;
+  cursor: pointer;
+}
+
+.control__button:hover {
+  box-shadow: 0 0 1px #888, 0 1px 0 #fff, 0 4px 0 #C0C0C0,
+    0 2px 35px rgba(68, 68, 68, 0.3), 2px 2px 4px rgba(68, 68, 68, 0.25),
+    -2px 2px 4px rgba(68, 68, 68, 0.25), 0 7px 4px rgba(68, 68, 68, 0.1);
+  transform: translateY(2px);
+}
+
+.control__button:active {
+  box-shadow: 0 0 1px #888, 0 1px 0 #fff, 0 0 0 #C0C0C0,
+    0 0px 30px rgba(68, 68, 68, 0.15), 2px 2px 4px rgba(68, 68, 68, 0.25),
+    -2px 2px 4px rgba(68, 68, 68, 0.25), 0 0px 4px rgba(68, 68, 68, 0.25);
+  transform: translateY(4px); 
+}

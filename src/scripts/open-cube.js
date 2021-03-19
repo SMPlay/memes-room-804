@@ -1,4 +1,3 @@
-
 const topWall = document.querySelector('.wall.top');
 const roof = document.getElementById('roof');
 
