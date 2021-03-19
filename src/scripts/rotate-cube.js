@@ -1,26 +1,33 @@
-import { dispatch } from "../store";
+import { dispatch, getDataFromStore } from "../store";
 import {
+  rotateSelector,
   rotateBottom,
   rotateLeft,
   rotateRight,
   rotateTop,
 } from "../slices";
 
-export const rotateCube = (keyCode) => {
-  switch (keyCode) {
-    case 37:
-      dispatch(rotateTop);
-      break;
-    case 38:
-      dispatch(rotateLeft);
-      break;
-    case 39:
+const cube = document.querySelector('.cube');
+
+export const rotateCube = (key) => {
+  switch (key) {
+    case 'ArrowLeft':
       dispatch(rotateBottom);
       break;
-    case 40:
+    case 'ArrowUp':
       dispatch(rotateRight);
+      break;
+    case 'ArrowRight':
+      dispatch(rotateTop);
+      break;
+    case 'ArrowDown':
+      dispatch(rotateLeft);
       break;
     default:
       return;
   }
+
+  const { rotateX, rotateY } = getDataFromStore(rotateSelector);
+
+  cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;  
 };

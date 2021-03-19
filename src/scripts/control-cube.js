@@ -1,14 +1,12 @@
-import { getDataFromStore } from '../store';
-import { rotateSelector } from '../slices';
 import { rotateCube } from './rotate-cube';
 
-const cube = document.querySelector('.cube');
+const controlPanel = document.querySelector('.control__panel');
 
-const rotateCubeListener = ({ keyCode }) => {
-  rotateCube(keyCode);
-  const { rotateX, rotateY } = getDataFromStore(rotateSelector);
+controlPanel.addEventListener('click', ({ target }) => {
+  if (target.classList.contains('control__button')) {
+    const key = target.dataset.key;
 
-  cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-}
-
-document.addEventListener('keydown', rotateCubeListener);
+    rotateCube(key);
+  }
+});
+document.addEventListener('keydown', ({ key }) => rotateCube(key));
