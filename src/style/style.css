@@ -1,0 +1,15 @@
+@import './variable.css';
+@import './cube.css';
+
+body {
+  margin: 0;
+  background: #0000FF;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  perspective: 500px;
+  transform: translate(-50%, -50%);
+}

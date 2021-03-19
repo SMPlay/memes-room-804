@@ -1,0 +1,22 @@
+{
+  "name": "memes-room-804",
+  "version": "1.0.0",
+  "description": "This repo was created for my Neighbors from room 804",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMPlay/memes-room-804.git"
+  },
+  "keywords": [
+    "memes"
+  ],
+  "author": "Pavel Sokolov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SMPlay/memes-room-804/issues"
+  },
+  "homepage": "https://github.com/SMPlay/memes-room-804#readme"
+}
