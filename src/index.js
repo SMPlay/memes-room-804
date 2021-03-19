@@ -1,7 +1,8 @@
 const cube = document.querySelector('.cube');
 
-let rotateX = 0;
-let rotateY = 0;
+// initial rotate. Get from 
+let rotateX = 30;
+let rotateY = 30;
 
 const rotateCube = ({ keyCode }) => {
   switch (keyCode) {

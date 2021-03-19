@@ -4,7 +4,7 @@
   height: var(--cub-size);
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  transform: rotateY(60deg) rotateX(30deg);
+  transform: rotateY(var(--initial-rotate)) rotateX(var(--initial-rotate));
 }
 
 .wall {
