@@ -1,4 +1,5 @@
-import { createSlice, createSelector } from "@reduxjs/toolkit";
+import { RootState } from './../store';
+import { createSlice, createSelector, PayloadAction } from "@reduxjs/toolkit";
 
 const rotate = createSlice({
   name: "rotate",
@@ -20,15 +21,15 @@ const rotate = createSlice({
     rotateBottom: (state) => {
       state.rotateY -= 4 * state.speedRotate;
     },
-    changeSpeedRotate: (state, { payload }) => {
+    changeSpeedRotate: (state, { payload }: PayloadAction<number>) => {
       state.speedRotate = payload;
     },
   },
 });
 
 export const rotateSelector = createSelector(
-  ({ rotateX }) => rotateX,
-  ({ rotateY }) => rotateY,
+  ({ rotateX }: RootState) => rotateX,
+  ({ rotateY }: RootState) => rotateY,
   (rotateX, rotateY) => ({ rotateX, rotateY })
 );
 

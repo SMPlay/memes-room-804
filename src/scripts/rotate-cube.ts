@@ -6,11 +6,12 @@ import {
   rotateRight,
   rotateTop,
 } from "../slices";
-import { ARROW_LEFT, ARROW_UP, ARROW_RIGHT, ARROW_DOWN } from './constants';
+import { ARROW_LEFT, ARROW_UP, ARROW_RIGHT, ARROW_DOWN } from "./constants";
+import { RotateButtonType } from "types/rotate-button-type";
 
-const cube = document.querySelector('.cube');
+const cube = document.querySelector(".cube") as HTMLDivElement;
 
-export const rotateCube = (key) => {
+export const rotateCube = (key: RotateButtonType) => {
   switch (key) {
     case ARROW_LEFT:
       dispatch(rotateBottom());
@@ -28,7 +29,7 @@ export const rotateCube = (key) => {
       return;
   }
 
-  const { rotateX, rotateY } = getDataFromStore(rotateSelector);
+  const { rotateX, rotateY } = getDataFromStore<ReturnType<typeof rotateSelector>>(rotateSelector);
 
-  cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;  
+  cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 };

@@ -6,4 +6,6 @@ export const { dispatch, getState } = configureStore({
   reducer: rotateReduced
 });
 
-export const getDataFromStore = (selectFn) => selectFn(getState());
+export type RootState = ReturnType<typeof getState>;
+
+export const getDataFromStore = <T>(selectFn: (state: RootState) => T) => selectFn(getState());
