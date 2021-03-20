@@ -13,8 +13,8 @@ controlPanel.addEventListener('click', (event) => {
     rotateCube(key);
   }
 });
-document.addEventListener('keydown', ({ key, ...event }) => {
-  const { tagName } = event.target as HTMLElement;
+document.addEventListener('keydown', ({ key, target }) => {
+  const { tagName } = target as HTMLElement;
 
   if (tagName === KEYDOWN_TARGET) {
     rotateCube(key as RotateButtonType);
