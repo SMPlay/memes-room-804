@@ -1,7 +1,9 @@
+@import './colors.scss';
+
 @mixin runnable-track {
   width: 300px;
   height: 4px;
-  background: rgb(255, 255, 255);
+  background: $white;
   border: none;
   border-radius: 50px;
 }
@@ -10,11 +12,11 @@
   -webkit-appearance: none;
   height: 24px;
   width: 16px;
-  border: 1px solid black;
+  border: 1px solid $black;
   border-radius: 8px;
   margin-top: -10px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  background: rgb(255, 255, 255);
+  box-shadow: 0px 10px 10px rgba($black, 0.25);
+  background: $white;
 }
 
 .speed {
@@ -22,7 +24,7 @@
   align-items: center;
 
   &__text {
-    color: rgb(255, 255, 255);
+    color: $white;
   }
 
   &__slider {
@@ -56,8 +58,8 @@
     width: 40px;
     margin-top: 4px;
     padding: 4px 0;
-    border: 2px solid rgb(155, 155, 155);
+    border: 2px solid lighten($gray, 22%);
     border-radius: 4px;
-    color: #fff;
+    color: $white;
   }
 }
