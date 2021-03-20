@@ -4,5 +4,6 @@ export {
   rotateLeft,
   rotateRight,
   rotateTop,
+  changeSpeedRotate,
   rotateSelector
 } from "./rotate.slice";

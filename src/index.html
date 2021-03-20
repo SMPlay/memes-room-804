@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/style.scss">
   <title>Super memes</title>
 </head>
 <body>
@@ -30,7 +29,14 @@
       <div data-key='ArrowDown' class="control__button control__button_bottom">&#129047;</div>
       <div data-key='ArrowRight' class="control__button control__button_right">&#129046;</div>
       <div data-key='ArrowUp' class="control__button control__button_top ">&#129045;</div>
-    </div> 
+    </div>
+    <div class="control__speed">
+      <label class="speed">
+        <span class="speed__text">Speed:&nbsp;</span>
+        <input class="speed__slider" type="range" min="0.1" max="4" step="0.1" value="1">
+      </label>
+      <div class="speed__count">1</div>
+    </div>
   </div>
   <script src='./index.js'></script>
 </body>
