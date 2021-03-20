@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Super memes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cube">
+        <div class="wall top">
+          <div id="roof" class="outside">Open me</div>
+        </div>
+        <div class="wall front">front</div>
+        <div class="wall back">back</div>
+        <div class="wall left">left</div>
+        <div class="wall right">right</div>
+        <div class="wall bottom">
+          <div class="inside"></div>
+        </div>
+      </div>
+    </div>
+    <div class="control">
+      Press these buttons on your keyboard or click for rotate the cube
+      <div class="control__panel">
+        <div data-key="ArrowLeft" class="control__button control__button_left">
+          &#129044;
+        </div>
+        <div
+          data-key="ArrowDown"
+          class="control__button control__button_bottom"
+        >
+          &#129047;
+        </div>
+        <div
+          data-key="ArrowRight"
+          class="control__button control__button_right"
+        >
+          &#129046;
+        </div>
+        <div data-key="ArrowUp" class="control__button control__button_top">
+          &#129045;
+        </div>
+      </div>
+      <div class="control__speed">
+        <label class="speed">
+          <span class="speed__text">Speed:&nbsp;</span>
+          <input
+            class="speed__slider"
+            type="range"
+            min="0.1"
+            max="4"
+            step="0.1"
+            value="1"
+          />
+        </label>
+        <div class="speed__count">1</div>
+      </div>
+    </div>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
   "description": "This repo was created for my Neighbors from room 804",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html --no-cache"
+    "start": "parcel ./public/index.html --no-cache"
   },
   "repository": {
     "type": "git",
