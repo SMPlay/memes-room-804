@@ -3,7 +3,7 @@
 @mixin runnable-track {
   width: 300px;
   height: 4px;
-  background: $white;
+  background: $gray;
   border: none;
   border-radius: 50px;
 }
@@ -24,7 +24,7 @@
   align-items: center;
 
   &__text {
-    color: $white;
+    color: $dark-gray;
   }
 
   &__slider {
@@ -58,8 +58,8 @@
     width: 40px;
     margin-top: 4px;
     padding: 4px 0;
-    border: 2px solid lighten($gray, 22%);
+    border: 2px solid $gray;
     border-radius: 4px;
-    color: $white;
+    color: $dark-gray;
   }
 }

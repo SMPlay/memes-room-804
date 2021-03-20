@@ -18,7 +18,7 @@
     width: inherit;
     height: inherit;
     transform-style: preserve-3d;
-    background-color: $black;
+    background-color: $primary;
 
     &.top {
       background: none;
@@ -60,7 +60,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: $red;
+      background: $secondary;
       transform-origin: top center;
       transition: 1s;
     
